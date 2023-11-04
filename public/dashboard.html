@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard - Content Crafter</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="dashboard.css">
+</head>
+<body>
+    <!-- Collapsible sidebar button -->
+    <div class="sidebar-button" onclick="toggleSidebar()">&#9776;</div>
+
+    <!-- Dashboard navigation -->
+    <div class="dashboard-nav" id="sidebar">
+        <div class="sidebar-header">
+            <h2>Dashboard Navigation</h2>
+            <span class="closebtn" onclick="toggleSidebar()">&times;</span>
+        </div>
+        <ul>
+            <li><a href="dashboard.html">Dashboard Home</a></li>
+            <li><a href="create-blog.html">Create Blog</a></li>
+            <li><a href="manage-posts.html">Manage Posts</a></li>
+            <li><a href="analytics.html">Analytics</a></li>
+        </ul>
+    </div>
+
+    <!-- Dashboard content -->
+    <div class="dashboard" id="dashboard">
+        <div class="dashboard-header">
+            <h1>Welcome to Your Dashboard</h1>
+        </div>
+
+        <!-- Subsection 1 -->
+        <div class="dashboard-subsection">
+            <h2>Blog Posts</h2>
+            <div class="dashboard-box">
+                <p>You currently have 20 published blog posts.</p>
+                <button class="dashboard-button">Manage Posts</button>
+            </div>
+        </div>
+
+        <!-- Subsection 2 -->
+        <div class="dashboard-subsection">
+            <h2>Comments</h2>
+            <div class="dashboard-box">
+                <p>You have 5 new comments on your blog posts.</p>
+                <button class="dashboard-button">View Comments</button>
+            </div>
+        </div>
+
+        <!-- Subsection 3 -->
+        <div class="dashboard-subsection">
+            <h2>Site Analytics</h2>
+            <div class="dashboard-box">
+                <p>Your website had 1000 visitors this week.</p>
+                <button class="dashboard-button">View Analytics</button>
+            </div>
+        </div>
+
+        <!-- Subsection 4 -->
+        <div class="dashboard-subsection">
+            <h2>Account Information</h2>
+            <div class="dashboard-box">
+                <p>Your account details and settings.</p>
+                <button class="dashboard-button">Edit Account</button>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function toggleSidebar() {
+            var sidebar = document.getElementById("sidebar");
+            if (sidebar.style.left === "0px" || sidebar.style.left === "") {
+                sidebar.style.left = "-250px";
+            } else {
+                sidebar.style.left = "0px";
+            }
+        }
+    </script>
+</body>
+</html>

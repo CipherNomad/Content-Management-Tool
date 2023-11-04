@@ -1,0 +1,125 @@
+/* Reset some default styles to ensure consistent styling */
+body, h1, h2, p, ul, li, form, input, button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Update the background with a soft pastel gradient */
+body {
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(135deg, #B2FF59, #1FA2FF); /* Gradient from light green to light blue */
+  color: #333; /* Dark text color for better readability on a light background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Adjust the size and shape of the logo */
+.logo img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Creates a circular shape */
+  object-fit: cover; /* Keeps the image centered and fills the circular container */
+  margin: 20px 0;
+}
+
+.login-form {
+  background: rgba(255, 255, 255, 0.9); /* Semi-transparent white background for the login form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: fade-in 1s ease;
+  /* Add a subtle background color to the white box */
+  background: #fff;
+}
+
+.title {
+  font-family: 'CreativeFont', cursive; /* Use your desired creative font */
+  font-size: 36px;
+}
+
+/* Form input styles */
+form input[type="text"],
+form input[type="password"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.login-button {
+  background: #833ab4; /* Use Instagram's purple color */
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+.login-button:hover {
+  background: #6f5bd5; /* Darker shade on hover */
+}
+
+/* Separator between "Log In" and "Forgot Password" */
+.or-separator {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+hr {
+  flex: 1;
+  border: none;
+  border-top: 1px solid #ccc;
+}
+
+span {
+  color: #555;
+  padding: 0 10px;
+}
+
+/* "Forgot Password?" link */
+.forgot-password {
+  text-decoration: none;
+  color: #833ab4; /* Use Instagram's purple color */
+  font-weight: bold;
+  display: block;
+  margin: 10px 0;
+}
+
+/* "Don't have an account? Sign up" section */
+.create-account {
+  color: #555;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.signup-link {
+  text-decoration: none;
+  color: #833ab4; /* Use Instagram's purple color */
+  margin-left: 5px;
+}
+
+/* Keyframe animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
